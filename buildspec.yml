@@ -1,0 +1,20 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      echo installing dependences....
+  prebuild:
+    commads:
+      echo enter pre-installing phase
+  build:
+    commands:
+      echo enter build phase
+      grep -Fq "ujwal" index.html
+    finally:
+      echo always run...
+  post build:
+    commands:
+      echo build completed...
+
+
